@@ -1,10 +1,8 @@
 <html>
   <body>
 
-    <h1>GOOD MORNINGlldd <h1>
-      <h1>no needgggyy</h1>
-      <h1>nice forkk new datak</h1>
-      <p> Deployed Simple web application</p>
+    <h1>GOOD MORNING<h1>
+      <p> Deployed a Simple web application on tomcat</p>
       
     
   
