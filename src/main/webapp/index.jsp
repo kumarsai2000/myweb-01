@@ -1,277 +1,216 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='./css/main.css' />
+    <link rel="shortcut icon" href="img\logo\Garcia Tavern-logos.jpeg" />
+    <script src="./js/anime.min.js"></script>    
+    <script src="js/intro.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <title>Gacias Tavern </title>
+</head>
 <body>
-  <nav id="sidebar">
-    <h2>HTML</h2>
-    <ul>
-      <li><a class="nav-item" href="#Introduction">Introduction</a></li>
-      <li>
-        <a class="nav-item" href="#html_editors">HTML Editors</a>
-      </li>
-      <li>
-        <a class="nav-item" href="#html_elements">HTML Elements</a>
-      </li>
-      <li><a class="nav-item" href="#html_attributes">HTML Attributes</a></li>
-      <li><a class="nav-item" href="#html_heading">HTML Heading</a></li>
-      <li>
-        <a class="nav-item" href="#html_paragraph">HTML Paragraph</a>
-      </li>
-      <li><a class="nav-item" href="#html_style">HTML Style</a></li>
-      <li><a class="nav-item" href="#html_formatting">HTML Formatting</a></li>
-      <li><a class="nav-item" href="#reference">Reference</a></li>
-    </ul>
-  </nav>
-  <main id="documentation">
-    <section id="Introduction">
-      <h2>Introduction</h2>
-      <article>
-        <p>
-          HTML is an acronym for HyperText Markup Language, and it is the
-          standard language for creating web-pages. Every web page you surf on
-          your browser is built using HTML. The primary use of HTML to provide
-          a proper structure to the web-page so all the content or data of the
-          page could represent adequately. A stand-alone HTML can create only
-          static and skeleton looking black and white pages, but with the help
-          of CSS and JavaScript , we can create a more interactive and
-          intuitive web-page. When we try to visit a website or click on the
-          link, we basically request the server to show us the page, then the
-          server acts on our request and sends us an appropriate HTML document
-          as a response. Then this HTML document parsed by browse, and we able
-          to see the content.
-        </p>
-        <h3>HTML Document</h3>
-        <pre>
-&lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                &lt;title&gt;Page Title&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
 
-                &lt;h1&gt;This is a Heading&lt;/h1&gt;
-                &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    <!--  animated nav bar -->
+     <div class="navBar" id="nv">
+        <nav>
+            <i class="bi bi-justify" onclick="alert('heelo')" id="hamMenu"></i>
+            <ul>
+                <!-- main nav section -->
+                <li><a href='?page=home'>HOME </a></li>
+                <li><a href='?page=menu'>MENU </a></li>
+                <li><a href='?page=ourstory'>OUR STORY  </a></li>
+                <li><a href='?page=contactus'>CONTACT US </a></li>
+                <!-- icons social and phone -->
+                <li class="socialIcon"><a href="call:111-111-111"><i class="bi bi-telephone-forward"></i></a></li>
+                <li class="socialIcon"><a href="instgram.com/example"><i class="bi bi-instagram"></i></a></li>
+                <li class="socialIcon"><a href="mailto:example@example.com"><i class="bi bi-envelope-fill"></i></a></li>
+            </ul>
+        </nav>
+    </div>  
+    
+    <div class="header">
 
-                &lt;/body&gt;
-                &lt;/html&gt;</pre>
-      </article>
-    </section>
-    <section id="html_editors">
-      <h2>HTML Editors</h2>
-      <article>
-        <p>
-          However, you can use notepad to create and edit HTML documents, but
-          we recommend to install an open-source editor. There are many free
-          to use text-editor software present on the internet, which provides
-          a better interactive User interface and some add-on functionality
-          which you miss on a notepad.
-        </p>
-        <p>Here is the list of top 4 HTML text editors you can pick:</p>
+       
+         
+    <!-- main logo !-->
+	<div class="IntroMsg">
+    <img  alt="Garcia Taverns where food meets passion" 
+    class="logo" src="https://i.ibb.co/WK9hkx8/Garcia-Tavern-logos-transparent.png" id="introLogo" width="200" height="200" />
+    </div>
+        <!-- subject-->
+	<div class='IntroMsg'>
+        <h1> Stunning food, Amazing Quaility  </h1>
+    </br>
+        <span>
+           Let us host your next special occassion
+        </span>
+        <h2>
+       <a href="call:111-111-111" style="text-decoration: none; color: white;"> <i class="bi bi-telephone-forward-fill"> <span> Contact US today </span></i></a>
+       
+        </h2>
+	</div>
+        <!-- review name-->
 
-        <ul>
-          <li>Sublime Text Editor</li>
-          <li>Notepad++</li>
-          <li>Visual Studio Code</li>
-          <li>Atom</li>
-        </ul>
-      </article>
-    </section>
-    <section id="html_elements">
-      <h2>HTML Elements</h2>
-      <article>
-        <p>
-          The HTML elements provide the semantic meaning to the web-page
-          content. We usually interchangeably use the term HTML elements and
-          tags, but technically both are different. An HTML tag is just a
-          character inside the angle bracket<>, whereas the HTML element is a
-            collection of starting tag, its attribute, content and end tag. For
-            example:
-        </p>
-        <pre>&lt;p class= "para"&gt; Hello World &lt;/p&gt;</pre>
-      </article>
-    </section>
-    <section id="html_attributes">
-      <h2>HTML Attributes</h2>
-      <article>
-        <p>
-          In HTML, the attributes are used to provide additional information
-          about the elements. For most of the HTML elements, attributes are
-          optional, but there are some elements where we have to deliver the
-          attributes. Attributes always specified within the opening tag of
-          the HTML element and they specified in a name and value pair.
-          <strong> Example </strong>
-        </p>
-        <pre>&lt;image src= "cat.jpg" alt ="cat image"&gt;</pre>
-        <p>
-          In this example src ="cat.jpg" and alt="cat image" are two
-          attributes where src and alt are attributes name and "cat.jpg" and
-          "cat image" are attributes values. Here alt attribute is optional,
-          but src is mandatory because src specify which image to show. There
-          should be at least one space gap between two attributes, and the
-          value of the attributes must have resided in the double inverted
-          comma. Some most important HTML
-        </p>
-      </article>
-    </section>
-    <section id="html_heading">
-      <h2>HTML Heading</h2>
-      <p>
-        To display the section heading, title or subtitle we can use the HTML
-        heading tags. In HTML 5 we have 6 heading tags start from &lt;h1&gt;
-        up to &lt;h6&gt;, where &lt;h1&gt; specify the largest heading and
-        &lt;h6&gt; represent the smallest or sub heading. If the content is
-        specified by heading tags, then it would be displayed large and bold
-        as compared to other text content present on the web-page.
-        <strong> Example </strong>
-      </p>
-      <pre>
-&lt;h1&gt;First Heading &lt;/h1&gt;
-            &lt;h2&gt;Second Heading &lt;/h2&gt;
-            &lt;h3&gt;Third Heading &lt;/h3&gt;
-            &lt;h4&gt;Forth Heading &lt;/h4&gt;
-            &lt;h5&gt;Fifth Heading &lt;/h5&gt;
-            &lt;h6&gt;Sixth Heading &lt;/h6&gt;</pre>
-    </section>
-    <section id="html_paragraph">
-      <h2>HTML Paragraph</h2>
-      <article>
-        <p>
-          In HTML paragraphs can be defined using &lt;p&gt; element. Paragraph
-          text always starts from a new line, the browser parsed the &lt;p&gt;
-          tag and automatically add some margin and white space after the end
-          &lt;/p&gt; tag.
-        </p>
-        <pre>
-&lt;p&gt; Hello! and Welcome to TechGeekBuzz &lt;/p&gt;
-                &lt;p&gt; Here you get to know all about the latest technology. &lt;/p&gt;</pre>
-      </article>
-    </section>
-    <section id="html_style">
-      <h2>HTML Style</h2>
-      <article>
-        <p>
-          Every browser has a specific engine that parses the HTML document and displays a default style of the page content.
-        </p>
-        <pre>&lt;body style="background-color:yellow;"&gt;
-
-                &lt;h1&gt;TechGeekBuzz&lt;/h1&gt;
-                &lt;p&gt;Welcome to TechGeekBuzz.&lt;/p&gt;
-                
-                &lt;/body&gt;</pre>
-      </article>
-    </section>
-    <section id="html_formatting">
-      <h2>HTML Formatting</h2>
-      <article>
-        <p>
-          In HTML, we have many special elements that can provide special meaning to text content.
-        </p>
-        <div class="hscroll">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <a href="https://www.techgeekbuzz.com/html-elements/">
-                    HTML Elements
-                  </a>
-                </td>
-                <td>
-                  Description
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;b&gt;
-                </td>
-                <td>
-                  Bold the text
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;strong&gt;
-                </td>
-                <td>
-                  An alternative for &lt;b&gt;, which tell that this text is essential.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;i&gt;
-                </td>
-                <td>
-                  Italic the text
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;em&gt;
-                </td>
-                <td>
-                  Similar to italic but used when we want to emphasize the text.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;mark&gt;
-                </td>
-                <td>
-                  It marks the text with a default "yellow" background colour
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;small&gt;
-                </td>
-                <td>
-                  Decrease the text size
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;del&gt;
-                </td>
-                <td>
-                  It prints a cross line over the text.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;ins&gt;
-                </td>
-                <td>
-                  Represents the inserted text by putting an underline.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;sub&gt;
-                </td>
-                <td>
-                  This element is used to display the subscript.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  &lt;sup&gt;
-                </td>
-                <td>
-                  It can make a text superscript.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- title system for content-->
+  
+     <div class="menu">   
+        <div class="menuIntro">     
+            <!-- img tile system -->
+            <img src="https://i.ibb.co/QCxY7FT/michael-discenza-Mxfcoxyc-H-Y-unsplash.jpg"/>
+            <img src="https://i.ibb.co/cNrYC6S/izabela-rutkowski-Nme6-Tb-Wu-Vp-A-unsplash.jpg" />
         </div>
-      </article>
+            
+    <!-- menu layout-->
+        <section id="home-menu">
+            <h2>DRINK MENU</h2>
+			<h3> Sprits, wine, and beer</h3>
+	<ul>
+		<li>
+			<span class="dish">Vodka 1oz</span>
+			<span class="Price">$6</span>
+			<span class="Description">VODKA and choice of juice or soda.</span>
+		</li>
+		<li>
+			<span class="dish">Rum 1oz.</span>
+			<span class="Price">$6</span>
+			<span class="Description">RUM and choice of juice or soda.</span>
+		</li>
+		<li>
+			<span class="dish">Whisky 1oz.</span>
+			<span class="Price">$6</span>
+			<span class="Description">Whisky and choice of juice or soda.</span>
+		</li>
+		<li>
+			<span class="dish">Tequila 1oz.</span>
+			<span class="Price">$6</span>
+			<span class="Description">Tequila served with juice or soda.</span>
+		</li>
+		<li>
+			<span class="dish">Red wine.</span>
+			<span class="Price">$8</span>
+			<span class="Description">8oz Red wine, ask server for our wine selection. </span>
+		</li>
+		<li>
+			<span class="dish">White wine.</span>
+			<span class="Price">$8</span>
+			<span class="Description">8oz white wine, ask server for our wine selection.</span>
+		</li>
+		<li>
+			<span class="dish">Sparkling wine .</span>
+			<span class="Price">$12</span>
+			<span class="Description">8oz sparking wine glass of your choice.</span>
+		</li>
+		<li>
+			<span class="dish">Domestic and foreign beer .</span>
+			<span class="Price">$6 - $8</span>
+			<span class="Description">Domestic and foreign beer of you choice</span>
+		</li>
+	</ul>
     </section>
+    <!-- end of menu layout -->
+    </div>
 
-    <section id="reference">
-      <h2>Reference</h2>
-      <article>
-        <ul>
-          <li>
-            All the documentation in this page is taken from
-            <a href="https://www.techgeekbuzz.com/tutorial/html/" target="_blank">HTML Tutorial</a>
-          </li>
-        </ul>
-      </article>
-    </section>
-  </main>
-</body>
+    <div class="menu">   
+        <div class="menuIntro">    
+            <img  id="caption_img"src="https://i.ibb.co/9g9yg5G/chad-montano-l-P5-MCM6n-Z5-A-unsplash.jpg"  />  
+            <img id="caption_img" src="https://i.ibb.co/q1HKkyL/ella-olsson-4d-Qia-WKi-L-Y-unsplash.jpg" />
+        </div>
+ 
+     <section id="home-menu">
+            <h2>FOOD MENU</h2>
+			<h3> Entrees, mains, and handhelds</h3>
+	<ul>
+		<li>
+			<span class="dish">Nachos</span>
+			<span class="Price">$12</span>
+			<span class="Description">cheese, onions, tomotoes. 
+			</span>
+		</li>
+		<li>
+			<span class="dish">Tacos.</span>
+			<span class="Price">$12</span>
+			<span class="Description">chicken or beef with your choice of side.</span>
+		</li>
+		<li>
+			<span class="dish">Chicken rice bowl.</span>
+			<span class="Price">$16</span>
+			<span class="Description">
+				brown rice, and veggies, served with choice or sauce 
+			</span>
+		</li>
+		<li>
+			<span class="dish">Grilled chicken</span>
+			<span class="Price">$15</span>
+			<span class="Description">
+				Juicy grilled chicken served with choice of sauce.
+			</span>
+		</li>
+		<li>
+			<span class="dish">Steak and fired beans.</span>
+			<span class="Price">$15</span>
+			<span class="Description">Steak and your choice of side.</span>
+		</li>
+		<li>
+			<span class="dish">burrito.</span>
+			<span class="Price">$12</span>
+			<span class="Description">Your choice of beef or chicken.</span>
+		</li>
+		
+	</ul></section></div>
+
+
+    <div class="menu">   
+        <div class="menuIntro">    
+             <img src="https://i.ibb.co/GJ0Q03Q/camille-paralisan-rq-NIBr-DGnh4-unsplash.jpg" />
+             <img src="https://i.ibb.co/rsxRJMX/oscar-nord-5-CPn8-NE2-Tc-unsplash.jpg" />
+        </div>
+     <section id="home-menu">
+            <h2>DESERT MENU</h2>
+			<h3> Deserts and sweets</h3>
+	<ul>
+		<li>
+			<span class="dish">Chocolate cake .</span>
+			<span class="Price">$7</span>
+			<span class="Description">Loaded Chocolate cake with fudge topping.</span>
+		</li>
+		<li>
+			<span class="dish">NY cheesecake.</span>
+			<span class="Price">$12</span>
+			<span class="Description">NY cheesecake toped with strawberry topping.</span>
+		</li>
+		<li>
+			<span class="dish">Apple pie.</span>
+			<span class="Price">$6</span>
+			<span class="Description">Warm apple pie tooped with icecream.</span>
+		</li>
+		<li>
+			<span class="dish">Churros.</span>
+			<span class="Price">$7</span>
+			<span class="Description">pancake mix, water, oil, sugar, cinnamon.</span>
+		</li>
+		<li>
+			<span class="dish">Sopaipillas</span>
+			<span class="Price">$7</span>
+			<span class="Description">Light, crispy pastry puffs, sopaipillas are a sweet way to round out a spicy meal.</span>
+		</li>
+		<li>
+			<span class="dish">Creamy Caramel Flan.</span>
+			<span class="Price">$12</span>
+			<span class="Description">A small slice of this impressively rich, creamy, caramel flan dessert goes a long
+				way.</span>
+		</li>
+		<li>
+			<span class="dish">Shortcut Tres Leches Cake</span>
+			<span class="Price">$12</span>
+			<span class="Description">My mom's favorite cake is tres leches, a butter cake soaked in three kinds of milk. </span>
+		</li>
+		<li>
+			<span class="dish">Pressure-Cooker Pumpkin Flans</span>
+			<span class="Price">$14</span>
+			<span class="Description">This silky, smooth dessert captures the essence and elegance of fall. </span>
+		</li>
+	</ul></section></div></div>
+
+
+   <!-- coded by cryptograghi 2021  aka oliver shwaba  :) -->
