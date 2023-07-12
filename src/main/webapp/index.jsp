@@ -15,7 +15,8 @@ root {
 
     --font: slategrey;
     --background: wheat;
-    --menuColor: slategrey;
+    --menuColor: slategrey;adding some
+    extra data
 }
 
 
